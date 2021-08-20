@@ -26,3 +26,27 @@ parser_csv.py
 ```
 
 ## Flavi-nrEVE Chunk Selection
+The script "subeveid.py" collects all read starting positions and the total counts separately for forward and reverse mapping reads
+
+It screens all 500 nt chunks per nrEVE and compiles piRNA density and read counts as well as average reads per piRNA.
+For this, it
+    - screens fwd and rev mapping reads separately
+
+    - counts only piRNAs that do not step over current window borders
+
+    - screens the whole EVE, if it is shorter than 500 nt
+    
+    - was run considering every sRNA read between between 23 and 31 nt as piRNA
+
+- output for every chunk: csv-file of the read depth per position in each chunk, separated for fwd and rev reads
+
+- output for every nrEVE: compiled read sum, piRNA density and average coverage per piRNA for fwd and rev reads
+
+
+script subeveid.py was run the following way
+
+```
+
+./subeveid.py 23 31 <outdir>
+
+```
