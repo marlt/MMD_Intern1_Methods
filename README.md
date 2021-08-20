@@ -1,6 +1,7 @@
 # Online Methods
 
-This is the online methods repository for the MMD Internship 1 of Maximilian Arlt to the topic:
+This is the online methods repository for the MMD Internship 1 of Maximilian Arlt to the topic: 
+**"Towards the Antiviral Immunity of EVE-derived piRNAs in Aedes spp.."**
 
 ## SINV Primer Design
 The primers were designed using the primer3 (v2.5.0) CLI on a Debian Buster operating system. It was performed in 5 rounds (+ last chunk), based on an individual settings file. The parameters were losened every round arbitrarily, keeping them "as small as possible".
